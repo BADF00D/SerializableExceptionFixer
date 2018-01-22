@@ -38,3 +38,5 @@ References:
 * [The CORRECT Way to Code a Custom Exception Class](https://blogs.msdn.microsoft.com/agileer/2013/05/17/the-correct-way-to-code-a-custom-exception-class/) by Doug Seelinger
 * [What is the correct way to make a custom .NET Exception serializable?
 ](https://stackoverflow.com/a/100369) by Daniel Fortunov and Duncan Jones
+* [Serialization (C# )](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization/)
+* [Object Serialization in the .NET Framework](https://msdn.microsoft.com/en-us/library/ms973893.aspx) by Piet Obermeyer and Jonathan Hawkins
