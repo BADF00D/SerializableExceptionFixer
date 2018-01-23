@@ -1,0 +1,8 @@
+source https://www.nuget.org/api/v2/
+
+nuget NuGet.CommandLine
+nuget Microsoft.CodeAnalysis.CSharp.Workspaces 1.0.1 restriction: >= net46
+nuget Microsoft.CodeAnalysis.VisualBasic.Workspaces 1.0.1 restriction: >= net46
+nuget FakeItEasy restriction: >= net46
+nuget NUnit restriction: >= net46
+nuget FluentAssertions restriction: >= net46

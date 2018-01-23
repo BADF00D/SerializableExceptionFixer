@@ -1,0 +1,6 @@
+Microsoft.CodeAnalysis.CSharp.Workspaces
+Microsoft.CodeAnalysis.VisualBasic.Workspaces
+
+FakeItEasy
+FluentAssertions
+NUnit
