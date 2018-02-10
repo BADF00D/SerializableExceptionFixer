@@ -72,6 +72,8 @@
     <ProjectReference Include="..\SerializableExceptionFixer\SerializableExceptionFixer.csproj">
       <Project>{3ed36ff6-09ec-4e50-930e-4a3d78a5e579}</Project>
       <Name>SerializableExceptionFixer</Name>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

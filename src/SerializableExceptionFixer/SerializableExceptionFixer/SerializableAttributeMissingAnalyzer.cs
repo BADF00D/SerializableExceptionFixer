@@ -1,9 +1,13 @@
 ﻿using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
+using SerializableExceptionFixer.Extensions;
 using System;
 using System.Collections.Immutable;
+using System.Linq;
 
-namespace SerializableExceptionFixer.Analyzers
+namespace SerializableExceptionFixer
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class SerializableAttributeMissingAnalyzer : DiagnosticAnalyzer
@@ -32,9 +36,39 @@ namespace SerializableExceptionFixer.Analyzers
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
             ImmutableArray.Create(SerializableAttributeMissingRule);
 
+        static SerializableAttributeMissingAnalyzer()
+        {
+
+        }
+
+        public SerializableAttributeMissingAnalyzer()
+        {
+            Console.WriteLine("adsad");
+        }
+
         public override void Initialize(AnalysisContext context)
         {
-            throw new NotImplementedException();
+            context.RegisterSyntaxNodeAction(AnalyseClassDeclaration, SyntaxKind.ClassDeclaration);
+        }
+
+        private void AnalyseClassDeclaration(SyntaxNodeAnalysisContext context)
+        {
+            var @class = context.Node as ClassDeclarationSyntax;
+            if (@class != null) return;
+
+            var semnaticModel = context.SemanticModel;
+            if (!semnaticModel.IsException(@class)) return;
+            
+            var serializationAttributes = @class.AttributeLists
+                .SelectMany(als => als.Attributes)
+                .Where(a => a.IsSerializableAttribute(context.SemanticModel))
+                .ToArray();
+
+            if (serializationAttributes.Any()) return;
+
+
+            context.ReportDiagnostic(Diagnostic.Create(SerializableAttributeMissingRule, @class.GetLocation()));
+
         }
     }
 }
