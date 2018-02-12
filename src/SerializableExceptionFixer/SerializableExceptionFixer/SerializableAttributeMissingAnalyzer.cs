@@ -54,7 +54,7 @@ namespace SerializableExceptionFixer
         private void AnalyseClassDeclaration(SyntaxNodeAnalysisContext context)
         {
             var @class = context.Node as ClassDeclarationSyntax;
-            if (@class != null) return;
+            if (@class == null) return;
 
             var semnaticModel = context.SemanticModel;
             if (!semnaticModel.IsException(@class)) return;

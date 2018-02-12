@@ -13,5 +13,16 @@ namespace SerializableExceptionFixer.Extensions
             }
             return string.Join(".", stack);
         }
+
+        public static bool IsOfType(this INamedTypeSymbol type, string fullQualifiedName)
+        {
+            if(type.GetFullNameWithNameSpace() == fullQualifiedName)
+            {
+                return true;
+            }
+            if (type.BaseType == null) return false;
+
+            return IsOfType(type.BaseType, fullQualifiedName);
+        }
     }
 }

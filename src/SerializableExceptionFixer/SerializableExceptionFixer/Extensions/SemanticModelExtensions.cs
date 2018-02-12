@@ -1,10 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SerializableExceptionFixer.Extensions
 {
@@ -14,8 +9,11 @@ namespace SerializableExceptionFixer.Extensions
         {
             if (!@class.BaseList.Types.Any()) return false;
 
-            var type = model.GetTypeInfo(@class);
 
+            if (model.GetDeclaredSymbol(@class) is INamedTypeSymbol nts){
+                return nts.IsOfType("System.Exception");
+                
+            }
             return false;
         }
     }
