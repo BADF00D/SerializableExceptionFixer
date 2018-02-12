@@ -7,8 +7,13 @@ namespace SerializableExceptionFixer.Extensions
     {
         public static bool IsSerializableAttribute(this AttributeSyntax attributeSyntax, SemanticModel model)
         {
-            var type = model.GetSymbolInfo(attributeSyntax);
+            var ctorInfo = model.GetSymbolInfo(attributeSyntax);
+            var attributeType = (ctorInfo.Symbol as IMethodSymbol)?.ContainingType;
 
+            if(attributeType.GetFullNameWithNameSpace() == "System.SerializableAttribute")
+            {
+                return true;
+            }
             return false;
         }
     }
