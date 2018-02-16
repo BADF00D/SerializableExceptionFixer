@@ -1,7 +1,7 @@
-﻿using Microsoft.CodeAnalysis;
-using System;
+﻿using System;
 using System.Linq;
 using System.Runtime.Serialization;
+using Microsoft.CodeAnalysis;
 
 namespace SerializableExceptionFixer.Extensions
 {
@@ -26,7 +26,7 @@ namespace SerializableExceptionFixer.Extensions
             if (method.Parameters.Count() != 2) return false;
 
             return method.Parameters[0].Type.GetFullNameWithNameSpace() == SystemString
-                && method.Parameters[1].Type.GetFullNameWithNameSpace() == SystemException;
+                   && method.Parameters[1].Type.GetFullNameWithNameSpace() == SystemException;
         }
 
         public static bool IsConstructorThatAcceptsSerializationInfoAndStreamingContext(this IMethodSymbol method)
@@ -35,7 +35,8 @@ namespace SerializableExceptionFixer.Extensions
             if (method.Parameters.Count() != 2) return false;
 
             return method.Parameters[0].Type.GetFullNameWithNameSpace() == SystemRuntimeSerializationException
-                   && method.Parameters[1].Type.GetFullNameWithNameSpace() == SystemRuntimeSerializationStreamingContext;
+                   && method.Parameters[1].Type.GetFullNameWithNameSpace() ==
+                   SystemRuntimeSerializationStreamingContext;
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Microsoft.CodeAnalysis;
 using NUnit.Framework;
-using SerializableExceptionFixer.ParameterlessContructorMissing;
+using SerializableExceptionFixer.ContructorsMissing;
 
 namespace SerializableExceptionFixer.Test.ContructorsMissing.ContructorsMissingAnalyzerSpecs
 {

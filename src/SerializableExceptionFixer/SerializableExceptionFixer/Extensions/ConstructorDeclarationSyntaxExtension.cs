@@ -1,6 +1,4 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Linq;
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace SerializableExceptionFixer.Extensions
 {

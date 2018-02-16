@@ -10,10 +10,7 @@ namespace SerializableExceptionFixer.Extensions
             if (!@class.BaseList.Types.Any()) return false;
 
 
-            if (model.GetDeclaredSymbol(@class) is INamedTypeSymbol nts){
-                return nts.IsOfType("System.Exception");
-                
-            }
+            if (model.GetDeclaredSymbol(@class) is INamedTypeSymbol nts) return nts.IsOfType("System.Exception");
             return false;
         }
     }
