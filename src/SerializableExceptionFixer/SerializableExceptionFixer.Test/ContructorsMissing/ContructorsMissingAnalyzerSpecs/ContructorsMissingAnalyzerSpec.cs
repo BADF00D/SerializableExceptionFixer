@@ -55,7 +55,7 @@ namespace SomeNamespace
         }
 
         [Test]
-        public void Should_missing_SerializableAttribute_be_labeled()
+        public void Should_missing_parameterless_constructor_be_notified()
         {
             _diagnostics[0].Id.Should().Be(DiagnosticIds.ParameterlessConstructorMissing);
         }
@@ -100,9 +100,54 @@ namespace SomeNamespace
         }
 
         [Test]
-        public void Should_missing_SerializableAttribute_be_labeled()
+        public void Should_missing_constructor_that_accepts_string_be_notified()
         {
             _diagnostics[0].Id.Should().Be(DiagnosticIds.ConstructorThatAcceptsStringMissing);
+        }
+    }
+
+    [TestFixture]
+    internal class If_Analyzer_runs_on_custom_exception_without_constructor_that_accepts_string_and_exception : ContructorsMissingAnalyzerSpec
+    {
+        private Diagnostic[] _diagnostics;
+        private const string Code = @"
+using System;
+using System.Runtime.Serialization;
+
+namespace SomeNamespace
+{
+    [Serializable]
+    public class MyException : Exception
+    {
+        public MyException()
+        {
+        }
+
+        public MyException(string message) : base(message)
+        {
+        }
+
+        protected MyException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
+    }
+}";
+
+        protected override void BecauseOf()
+        {
+            _diagnostics = MyHelper.RunAnalyser(Code, Sut);
+        }
+
+        [Test]
+        public void There_should_be_one_diagnostic()
+        {
+            _diagnostics.Length.Should().Be(1);
+        }
+
+        [Test]
+        public void Should_missing_constructor_that_accepts_string_and_exception_be_notified()
+        {
+            _diagnostics[0].Id.Should().Be(DiagnosticIds.ConstructorThatAcceptsStringAndExceptionMissing);
         }
     }
 
