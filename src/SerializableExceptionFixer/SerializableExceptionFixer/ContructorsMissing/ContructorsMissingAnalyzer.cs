@@ -25,7 +25,7 @@ namespace SerializableExceptionFixer.ParameterlessContructorMissing
                 typeof(Resources));
 
         private static readonly DiagnosticDescriptor ParameterlessConstructorMissingRule = new DiagnosticDescriptor(
-            DiagnosticIds.SerializableExceptionAttributeMissing,
+            DiagnosticIds.ParameterlessConstructorMissing,
             ParameterlessConstructorMissingTitle,
             ParameterlessConstructorMissingMessageFormat,
             Constants.Category,
