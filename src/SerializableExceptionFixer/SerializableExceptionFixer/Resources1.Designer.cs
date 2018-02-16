@@ -232,11 +232,65 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Constructor that accepts SerializationInfo and StreamingContext is missing..
+        /// </summary>
+        public static string SerializationInfoAndStreamingContextConstructorMissingDescription {
+            get {
+                return ResourceManager.GetString("SerializationInfoAndStreamingContextConstructorMissingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should implement a constructor that accepts a SerializationInfo and StreamingContext..
+        /// </summary>
+        public static string SerializationInfoAndStreamingContextConstructorMissingMessageFormat {
+            get {
+                return ResourceManager.GetString("SerializationInfoAndStreamingContextConstructorMissingMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Constructor that accepts SerializationInfo and StreamingContext is missing..
+        /// </summary>
+        public static string SerializationInfoAndStreamingContextConstructorMissingTitle {
+            get {
+                return ResourceManager.GetString("SerializationInfoAndStreamingContextConstructorMissingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ThrowsDeprecatedDescription.
         /// </summary>
         public static string String {
             get {
                 return ResourceManager.GetString("String", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should implement a constructor that accepts a string and exception. desc.
+        /// </summary>
+        public static string StringAndExceptionConstructorMissingDescription {
+            get {
+                return ResourceManager.GetString("StringAndExceptionConstructorMissingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should implement a constructor that accepts a string and exception..
+        /// </summary>
+        public static string StringAndExceptionConstructorMissingMessageFormat {
+            get {
+                return ResourceManager.GetString("StringAndExceptionConstructorMissingMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Constructor that accepts string and Exception is missing..
+        /// </summary>
+        public static string StringAndExceptionConstructorMissingTitle {
+            get {
+                return ResourceManager.GetString("StringAndExceptionConstructorMissingTitle", resourceCulture);
             }
         }
         
