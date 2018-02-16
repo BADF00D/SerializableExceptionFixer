@@ -41,8 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\AttributeSyntaxExtension.cs" />
+    <Compile Include="Extensions\ConstructorDeclarationSyntaxExtension.cs" />
+    <Compile Include="Extensions\MethodSymbolExtension.cs" />
     <Compile Include="Extensions\SemanticModelExtensions.cs" />
-    <Compile Include="ParameterlessContructorMissing\ParameterlessConstructorMissingAnalyzer.cs" />
+    <Compile Include="Extensions\SyntaxNodeExtension.cs" />
+    <Compile Include="ContructorsMissing\ContructorsMissingAnalyzer.cs" />
     <Compile Include="SerializableAttributeMissing\SerializableAttributeMissingAnalyzer.cs" />
     <Compile Include="DiagnosticIds.cs" />
     <Compile Include="Extensions\NamespaceOrTypeSymbolExtension.cs" />

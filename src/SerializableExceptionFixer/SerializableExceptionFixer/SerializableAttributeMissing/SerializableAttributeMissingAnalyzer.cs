@@ -12,6 +12,7 @@ namespace SerializableExceptionFixer.SerializableAttributeMissing
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class SerializableAttributeMissingAnalyzer : DiagnosticAnalyzer
     {
+        #region Localization
         private static readonly LocalizableString SerializableAttributeMissingTitle =
             new LocalizableResourceString(nameof(Resources.SerializableAttributeMissingTitle), Resources.ResourceManager,
                 typeof(Resources));
@@ -32,6 +33,8 @@ namespace SerializableExceptionFixer.SerializableAttributeMissing
             DiagnosticSeverity.Error,
             true,
             SerializableAttributeMissingDescription);
+        #endregion Localization
+
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
             ImmutableArray.Create(SerializableAttributeMissingRule);
@@ -55,8 +58,7 @@ namespace SerializableExceptionFixer.SerializableAttributeMissing
                 .ToArray();
 
             if (serializationAttributes.Any()) return;
-
-
+            
             context.ReportDiagnostic(Diagnostic.Create(SerializableAttributeMissingRule, @class.GetLocation()));
 
         }

@@ -183,4 +183,22 @@
   <data name="SerializableAttributeMissingTitle" xml:space="preserve">
     <value>Title -  Attribute missing</value>
   </data>
+  <data name="ParameterlessConstructorMissingDescription" xml:space="preserve">
+    <value>Parameterless ctor missing desc</value>
+  </data>
+  <data name="ParameterlessConstructorMissingMessageFormat" xml:space="preserve">
+    <value>You should implement a parameterless constructor.</value>
+  </data>
+  <data name="ParameterlessConstructorMissingTitle" xml:space="preserve">
+    <value>Parameterless contructor missing</value>
+  </data>
+  <data name="StringConstructorMissingDescription" xml:space="preserve">
+    <value>You should implement a constructor that accepts a string. desc</value>
+  </data>
+  <data name="StringConstructorMissingMessageFormat" xml:space="preserve">
+    <value>You should implement a constructor that accepts a string.</value>
+  </data>
+  <data name="StringConstructorMissingTitle" xml:space="preserve">
+    <value>Constructor that accepts string is missing</value>
+  </data>
 </root>

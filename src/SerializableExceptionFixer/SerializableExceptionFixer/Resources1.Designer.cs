@@ -106,6 +106,33 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Parameterless ctor missing desc.
+        /// </summary>
+        public static string ParameterlessConstructorMissingDescription {
+            get {
+                return ResourceManager.GetString("ParameterlessConstructorMissingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should implement a parameterless constructor..
+        /// </summary>
+        public static string ParameterlessConstructorMissingMessageFormat {
+            get {
+                return ResourceManager.GetString("ParameterlessConstructorMissingMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameterless contructor missing.
+        /// </summary>
+        public static string ParameterlessConstructorMissingTitle {
+            get {
+                return ResourceManager.GetString("ParameterlessConstructorMissingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to NUnit3 does not support TestCaseSource that are instance members..
         /// </summary>
         public static string ReferencedFieldInTestCasesSourceIsNotStaticDescription {
@@ -210,6 +237,33 @@ namespace SerializableExceptionFixer {
         public static string String {
             get {
                 return ResourceManager.GetString("String", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should implement a constructor that accepts a string. desc.
+        /// </summary>
+        public static string StringConstructorMissingDescription {
+            get {
+                return ResourceManager.GetString("StringConstructorMissingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should implement a constructor that accepts a string..
+        /// </summary>
+        public static string StringConstructorMissingMessageFormat {
+            get {
+                return ResourceManager.GetString("StringConstructorMissingMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Constructor that accepts string is missing.
+        /// </summary>
+        public static string StringConstructorMissingTitle {
+            get {
+                return ResourceManager.GetString("StringConstructorMissingTitle", resourceCulture);
             }
         }
         
