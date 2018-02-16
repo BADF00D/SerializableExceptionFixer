@@ -5,16 +5,14 @@ namespace SerializableExceptionFixer.Extensions
 {
     public static class AttributeSyntaxExtension
     {
+        private static readonly string SystemSerializableAttribute = typeof(System.SerializableAttribute).FullName;
+
         public static bool IsSerializableAttribute(this AttributeSyntax attributeSyntax, SemanticModel model)
         {
             var ctorInfo = model.GetSymbolInfo(attributeSyntax);
             var attributeType = (ctorInfo.Symbol as IMethodSymbol)?.ContainingType;
 
-            if(attributeType.GetFullNameWithNameSpace() == "System.SerializableAttribute")
-            {
-                return true;
-            }
-            return false;
+            return attributeType.GetFullNameWithNameSpace() == SystemSerializableAttribute;
         }
     }
 }

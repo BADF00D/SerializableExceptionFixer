@@ -42,7 +42,8 @@
   <ItemGroup>
     <Compile Include="Extensions\AttributeSyntaxExtension.cs" />
     <Compile Include="Extensions\SemanticModelExtensions.cs" />
-    <Compile Include="SerializableAttributeMissingAnalyzer.cs" />
+    <Compile Include="ParameterlessContructorMissing\ParameterlessConstructorMissingAnalyzer.cs" />
+    <Compile Include="SerializableAttributeMissing\SerializableAttributeMissingAnalyzer.cs" />
     <Compile Include="DiagnosticIds.cs" />
     <Compile Include="Extensions\NamespaceOrTypeSymbolExtension.cs" />
     <Compile Include="Extensions\QualifiedNameSyntaxExtensions.cs" />
@@ -71,9 +72,7 @@
       <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SerializableAttributeMissing\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Analyzer Include="..\..\..\packages\Microsoft.CodeAnalysis.Analyzers\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll">
       <Paket>True</Paket>

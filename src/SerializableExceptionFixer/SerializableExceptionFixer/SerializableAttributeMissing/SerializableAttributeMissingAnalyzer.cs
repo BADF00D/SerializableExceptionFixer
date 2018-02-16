@@ -7,7 +7,7 @@ using System;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace SerializableExceptionFixer
+namespace SerializableExceptionFixer.SerializableAttributeMissing
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class SerializableAttributeMissingAnalyzer : DiagnosticAnalyzer
@@ -35,17 +35,7 @@ namespace SerializableExceptionFixer
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
             ImmutableArray.Create(SerializableAttributeMissingRule);
-
-        static SerializableAttributeMissingAnalyzer()
-        {
-
-        }
-
-        public SerializableAttributeMissingAnalyzer()
-        {
-            Console.WriteLine("adsad");
-        }
-
+        
         public override void Initialize(AnalysisContext context)
         {
             context.RegisterSyntaxNodeAction(AnalyseClassDeclaration, SyntaxKind.ClassDeclaration);
