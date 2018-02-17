@@ -33,20 +33,20 @@ namespace SerializableExceptionFixer.ContructorsMissing
                 .DescendantNodes<ConstructorDeclarationSyntax>();
 
             if (!constructors.Any(cds => cds.IsParameterlessConstructor()))
-                context.ReportDiagnostic(Diagnostic.Create(ParameterlessConstructorMissingRule, @class.GetLocation()));
+                context.ReportDiagnostic(Diagnostic.Create(ParameterlessConstructorMissingRule, @class.GetLocation(), @class.Identifier.Text));
             var classType = context.SemanticModel.GetDeclaredSymbol(@class);
 
             if (!classType.Constructors.Any(ctor => ctor.IsConstructorThatAcceptsString()))
-                context.ReportDiagnostic(Diagnostic.Create(StringConstructorMissingRule, @class.GetLocation()));
+                context.ReportDiagnostic(Diagnostic.Create(StringConstructorMissingRule, @class.GetLocation(), @class.Identifier.Text));
 
             if (!classType.Constructors.Any(ctor => ctor.IsConstructorThatAcceptsStringAndException()))
                 context.ReportDiagnostic(Diagnostic.Create(StringAndExceptionConstructorMissingRule,
-                    @class.GetLocation()));
+                    @class.GetLocation(), @class.Identifier.Text));
 
             if (!classType.Constructors.Any(ctor => ctor.IsConstructorThatAcceptsSerializationInfoAndStreamingContext())
             )
                 context.ReportDiagnostic(Diagnostic.Create(SerializationInfoAndStreamingContextConstructorMissingRule,
-                    @class.GetLocation()));
+                    @class.GetLocation(), @class.Identifier.Text));
         }
 
         #region Localization

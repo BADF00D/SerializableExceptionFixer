@@ -61,7 +61,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Its recommended that each Exception ends with Exception.
+        ///   Looks up a localized string similar to Its recommended that each Exception ends with suffix Exception..
         /// </summary>
         public static string ExceptionsSuffixDescription {
             get {
@@ -70,7 +70,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Custom Exceptions should end with Exception.
+        ///   Looks up a localized string similar to {0} should end with Exception like {1}..
         /// </summary>
         public static string ExceptionsSuffixMessageFormat {
             get {
@@ -79,7 +79,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Should be named *Exception.
+        ///   Looks up a localized string similar to Exceptions should end with Exception.
         /// </summary>
         public static string ExceptionsSuffixMissingTitle {
             get {
@@ -88,7 +88,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Parameterless ctor missing desc.
+        ///   Looks up a localized string similar to Its recommended to add a parameterless constructor..
         /// </summary>
         public static string ParameterlessConstructorMissingDescription {
             get {
@@ -97,7 +97,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should implement a parameterless constructor..
+        ///   Looks up a localized string similar to Its recommended to add constructor {0}()..
         /// </summary>
         public static string ParameterlessConstructorMissingMessageFormat {
             get {
@@ -115,7 +115,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Desc -  Attribute missing.
+        ///   Looks up a localized string similar to Its recommended that all Exceptions are serializable and therfore should be marked with [Serializable] attribute..
         /// </summary>
         public static string SerializableAttributeMissingDescription {
             get {
@@ -124,7 +124,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MEssageFormat -  Attribute missing.
+        ///   Looks up a localized string similar to Its recommended to add [Serializable] to {0}..
         /// </summary>
         public static string SerializableAttributeMissingMessageFormat {
             get {
@@ -133,7 +133,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Title -  Attribute missing.
+        ///   Looks up a localized string similar to Serializable-Attribute missing.
         /// </summary>
         public static string SerializableAttributeMissingTitle {
             get {
@@ -142,7 +142,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Constructor that accepts SerializationInfo and StreamingContext is missing..
+        ///   Looks up a localized string similar to Its recommended to add constructor that accepts SerializationInfo and StreamingContext..
         /// </summary>
         public static string SerializationInfoAndStreamingContextConstructorMissingDescription {
             get {
@@ -151,7 +151,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should implement a constructor that accepts a SerializationInfo and StreamingContext..
+        ///   Looks up a localized string similar to Its recommended to add constructor {0}(SerializationInfo info, StreamingContext context)..
         /// </summary>
         public static string SerializationInfoAndStreamingContextConstructorMissingMessageFormat {
             get {
@@ -169,7 +169,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should implement a constructor that accepts a string and exception. desc.
+        ///   Looks up a localized string similar to Its recommended to add constructor that accepts String and Exception..
         /// </summary>
         public static string StringAndExceptionConstructorMissingDescription {
             get {
@@ -178,7 +178,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should implement a constructor that accepts a string and exception..
+        ///   Looks up a localized string similar to Its recommended to add constructor {0}(string message, Exception inner)..
         /// </summary>
         public static string StringAndExceptionConstructorMissingMessageFormat {
             get {
@@ -196,7 +196,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should implement a constructor that accepts a string. desc.
+        ///   Looks up a localized string similar to Its recommended to add constructor that accepts String..
         /// </summary>
         public static string StringConstructorMissingDescription {
             get {
@@ -205,7 +205,7 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should implement a constructor that accepts a string..
+        ///   Looks up a localized string similar to Its recommended to add constructor {0}(string message)..
         /// </summary>
         public static string StringConstructorMissingMessageFormat {
             get {

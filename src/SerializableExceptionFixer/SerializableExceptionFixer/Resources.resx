@@ -118,57 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="SerializableAttributeMissingDescription" xml:space="preserve">
-    <value>Desc -  Attribute missing</value>
+    <value>Its recommended that all Exceptions are serializable and therfore should be marked with [Serializable] attribute.</value>
   </data>
   <data name="SerializableAttributeMissingMessageFormat" xml:space="preserve">
-    <value>MEssageFormat -  Attribute missing</value>
+    <value>Its recommended to add [Serializable] to {0}.</value>
   </data>
   <data name="SerializableAttributeMissingTitle" xml:space="preserve">
-    <value>Title -  Attribute missing</value>
+    <value>Serializable-Attribute missing</value>
   </data>
   <data name="ParameterlessConstructorMissingDescription" xml:space="preserve">
-    <value>Parameterless ctor missing desc</value>
+    <value>Its recommended to add a parameterless constructor.</value>
   </data>
   <data name="ParameterlessConstructorMissingMessageFormat" xml:space="preserve">
-    <value>You should implement a parameterless constructor.</value>
+    <value>Its recommended to add constructor {0}().</value>
   </data>
   <data name="ParameterlessConstructorMissingTitle" xml:space="preserve">
     <value>Parameterless contructor missing</value>
   </data>
   <data name="StringConstructorMissingDescription" xml:space="preserve">
-    <value>You should implement a constructor that accepts a string. desc</value>
+    <value>Its recommended to add constructor that accepts String.</value>
   </data>
   <data name="StringConstructorMissingMessageFormat" xml:space="preserve">
-    <value>You should implement a constructor that accepts a string.</value>
+    <value>Its recommended to add constructor {0}(string message).</value>
   </data>
   <data name="StringConstructorMissingTitle" xml:space="preserve">
     <value>Constructor that accepts string is missing</value>
   </data>
   <data name="StringAndExceptionConstructorMissingDescription" xml:space="preserve">
-    <value>You should implement a constructor that accepts a string and exception. desc</value>
+    <value>Its recommended to add constructor that accepts String and Exception.</value>
   </data>
   <data name="StringAndExceptionConstructorMissingMessageFormat" xml:space="preserve">
-    <value>You should implement a constructor that accepts a string and exception.</value>
+    <value>Its recommended to add constructor {0}(string message, Exception inner).</value>
   </data>
   <data name="StringAndExceptionConstructorMissingTitle" xml:space="preserve">
     <value>Constructor that accepts string and Exception is missing.</value>
   </data>
   <data name="SerializationInfoAndStreamingContextConstructorMissingDescription" xml:space="preserve">
-    <value>Constructor that accepts SerializationInfo and StreamingContext is missing.</value>
+    <value>Its recommended to add constructor that accepts SerializationInfo and StreamingContext.</value>
   </data>
   <data name="SerializationInfoAndStreamingContextConstructorMissingMessageFormat" xml:space="preserve">
-    <value>You should implement a constructor that accepts a SerializationInfo and StreamingContext.</value>
+    <value>Its recommended to add constructor {0}(SerializationInfo info, StreamingContext context).</value>
   </data>
   <data name="SerializationInfoAndStreamingContextConstructorMissingTitle" xml:space="preserve">
     <value>Constructor that accepts SerializationInfo and StreamingContext is missing.</value>
   </data>
   <data name="ExceptionsSuffixDescription" xml:space="preserve">
-    <value>Its recommended that each Exception ends with Exception</value>
+    <value>Its recommended that each Exception ends with suffix Exception.</value>
   </data>
   <data name="ExceptionsSuffixMessageFormat" xml:space="preserve">
-    <value>Custom Exceptions should end with Exception</value>
+    <value>{0} should end with Exception like {1}.</value>
   </data>
   <data name="ExceptionsSuffixMissingTitle" xml:space="preserve">
-    <value>Should be named *Exception</value>
+    <value>Exceptions should end with Exception</value>
   </data>
 </root>

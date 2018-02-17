@@ -19,10 +19,9 @@ namespace SerializableExceptionFixer.SerializableAttributeMissing
             context.RegisterSyntaxNodeAction(AnalyseClassDeclaration, SyntaxKind.ClassDeclaration);
         }
 
-        private void AnalyseClassDeclaration(SyntaxNodeAnalysisContext context)
+        private static void AnalyseClassDeclaration(SyntaxNodeAnalysisContext context)
         {
-            var @class = context.Node as ClassDeclarationSyntax;
-            if (@class == null) return;
+            if (!(context.Node is ClassDeclarationSyntax @class)) return;
 
             var semnaticModel = context.SemanticModel;
             if (!semnaticModel.IsException(@class)) return;
@@ -34,7 +33,7 @@ namespace SerializableExceptionFixer.SerializableAttributeMissing
 
             if (serializationAttributes.Any()) return;
 
-            context.ReportDiagnostic(Diagnostic.Create(SerializableAttributeMissingRule, @class.GetLocation()));
+            context.ReportDiagnostic(Diagnostic.Create(SerializableAttributeMissingRule, @class.GetLocation(), @class.Identifier.Text));
         }
 
         #region Localization

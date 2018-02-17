@@ -30,7 +30,7 @@ namespace SerializableExceptionFixer.ExceptionsSuffix
 
             if (@class.Identifier.Text.EndsWith(Exception)) return;
 
-            context.ReportDiagnostic(Diagnostic.Create(ExceptionsSuffixRule, @class.GetLocation()));
+            context.ReportDiagnostic(Diagnostic.Create(ExceptionsSuffixRule, @class.GetLocation(), @class.Identifier.Text, @class.Identifier.Text + Exception));
         }
 
         #region Localization
