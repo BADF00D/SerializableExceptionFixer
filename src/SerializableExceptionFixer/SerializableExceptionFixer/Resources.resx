@@ -117,63 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ThrowsDeprecatedDescription" xml:space="preserve">
-    <value>Throws is deprecated, catch Exception yourself is recommended.</value>
-  </data>
-  <data name="AsyncVoidIsDeprectedDescription" xml:space="preserve">
-    <value>NUnit3 does not allow async void test methods, use async Task instead. </value>
-  </data>
-  <data name="AsyncVoidIsDeprectedMessageFormat" xml:space="preserve">
-    <value>Async void is not allowed. use async Task instead.</value>
-  </data>
-  <data name="AnalyzerTitle" xml:space="preserve">
-    <value>Deprecated</value>
-    <comment>The title of the diagnostic.</comment>
-  </data>
-  <data name="ExpectedExceptionDeprecatedDescription" xml:space="preserve">
-    <value>ExpectedExceptionAttribute is deprecated and will be removed in NUnit3. User Asser.ShouldThrow&lt;Exception&gt; instead.</value>
-    <comment>An optional longer localizable description of the diagnostic.</comment>
-  </data>
-  <data name="ExpectedExceptionDeprecatedMessageFormat" xml:space="preserve">
-    <value>ExpectedExceptionAttribute is deprecated</value>
-    <comment>The format-able message the diagnostic displays.</comment>
-  </data>
-  <data name="ThrowsDeprecatedMessageFormat" xml:space="preserve">
-    <value>Throws is deprecated</value>
-  </data>
-  <data name="String" xml:space="preserve">
-    <value>ThrowsDeprecatedDescription</value>
-  </data>
-  <data name="ReferencedFieldInTestCasesSourceIsNotStaticDescription" xml:space="preserve">
-    <value>NUnit3 does not support TestCaseSource that are instance members.</value>
-  </data>
-  <data name="ReferencedFieldInTestCasesSourceIsNotStaticMessageFormat" xml:space="preserve">
-    <value>Referenced TestCaseSource has to be static</value>
-  </data>
-  <data name="ReferencedMethodInTestCasesSourceIsNotStaticDescription" xml:space="preserve">
-    <value>NUnit3 does not support TestCaseSource that are instance members.</value>
-  </data>
-  <data name="ReferencedMethodInTestCasesSourceIsNotStaticMessageFormat" xml:space="preserve">
-    <value>Referenced TestCaseSource has to be static</value>
-  </data>
-  <data name="ReferencedPropertyInTestCasesSourceIsNotStaticDescription" xml:space="preserve">
-    <value>NUnit3 does not support TestCaseSource that are instance members.</value>
-  </data>
-  <data name="ReferencedPropertyInTestCasesSourceIsNotStaticMessageFormat" xml:space="preserve">
-    <value>Referenced TestCaseSource has to be static</value>
-  </data>
-  <data name="TestFixtureOnAbstractClassIsUselessDescription" xml:space="preserve">
-    <value>Abstract classes will not be run by NUnit, so this attribute can be removed</value>
-  </data>
-  <data name="TestFixtureOnAbstractClassIsUselessMessageFormat" xml:space="preserve">
-    <value>TestFixture on abstract class is useless.</value>
-  </data>
-  <data name="ReferencedMemberDoesNotExistsDescription" xml:space="preserve">
-    <value>TestCaseSource references a memeber that does not exists</value>
-  </data>
-  <data name="ReferencedMemberDoesNotExistsXMessageFormat" xml:space="preserve">
-    <value>Missing member {0}</value>
-  </data>
   <data name="SerializableAttributeMissingDescription" xml:space="preserve">
     <value>Desc -  Attribute missing</value>
   </data>

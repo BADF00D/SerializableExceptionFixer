@@ -61,33 +61,6 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deprecated.
-        /// </summary>
-        public static string AnalyzerTitle {
-            get {
-                return ResourceManager.GetString("AnalyzerTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to NUnit3 does not allow async void test methods, use async Task instead. .
-        /// </summary>
-        public static string AsyncVoidIsDeprectedDescription {
-            get {
-                return ResourceManager.GetString("AsyncVoidIsDeprectedDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Async void is not allowed. use async Task instead..
-        /// </summary>
-        public static string AsyncVoidIsDeprectedMessageFormat {
-            get {
-                return ResourceManager.GetString("AsyncVoidIsDeprectedMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Its recommended that each Exception ends with Exception.
         /// </summary>
         public static string ExceptionsSuffixDescription {
@@ -115,24 +88,6 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ExpectedExceptionAttribute is deprecated and will be removed in NUnit3. User Asser.ShouldThrow&lt;Exception&gt; instead..
-        /// </summary>
-        public static string ExpectedExceptionDeprecatedDescription {
-            get {
-                return ResourceManager.GetString("ExpectedExceptionDeprecatedDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ExpectedExceptionAttribute is deprecated.
-        /// </summary>
-        public static string ExpectedExceptionDeprecatedMessageFormat {
-            get {
-                return ResourceManager.GetString("ExpectedExceptionDeprecatedMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Parameterless ctor missing desc.
         /// </summary>
         public static string ParameterlessConstructorMissingDescription {
@@ -156,78 +111,6 @@ namespace SerializableExceptionFixer {
         public static string ParameterlessConstructorMissingTitle {
             get {
                 return ResourceManager.GetString("ParameterlessConstructorMissingTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to NUnit3 does not support TestCaseSource that are instance members..
-        /// </summary>
-        public static string ReferencedFieldInTestCasesSourceIsNotStaticDescription {
-            get {
-                return ResourceManager.GetString("ReferencedFieldInTestCasesSourceIsNotStaticDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Referenced TestCaseSource has to be static.
-        /// </summary>
-        public static string ReferencedFieldInTestCasesSourceIsNotStaticMessageFormat {
-            get {
-                return ResourceManager.GetString("ReferencedFieldInTestCasesSourceIsNotStaticMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TestCaseSource references a memeber that does not exists.
-        /// </summary>
-        public static string ReferencedMemberDoesNotExistsDescription {
-            get {
-                return ResourceManager.GetString("ReferencedMemberDoesNotExistsDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Missing member {0}.
-        /// </summary>
-        public static string ReferencedMemberDoesNotExistsXMessageFormat {
-            get {
-                return ResourceManager.GetString("ReferencedMemberDoesNotExistsXMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to NUnit3 does not support TestCaseSource that are instance members..
-        /// </summary>
-        public static string ReferencedMethodInTestCasesSourceIsNotStaticDescription {
-            get {
-                return ResourceManager.GetString("ReferencedMethodInTestCasesSourceIsNotStaticDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Referenced TestCaseSource has to be static.
-        /// </summary>
-        public static string ReferencedMethodInTestCasesSourceIsNotStaticMessageFormat {
-            get {
-                return ResourceManager.GetString("ReferencedMethodInTestCasesSourceIsNotStaticMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to NUnit3 does not support TestCaseSource that are instance members..
-        /// </summary>
-        public static string ReferencedPropertyInTestCasesSourceIsNotStaticDescription {
-            get {
-                return ResourceManager.GetString("ReferencedPropertyInTestCasesSourceIsNotStaticDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Referenced TestCaseSource has to be static.
-        /// </summary>
-        public static string ReferencedPropertyInTestCasesSourceIsNotStaticMessageFormat {
-            get {
-                return ResourceManager.GetString("ReferencedPropertyInTestCasesSourceIsNotStaticMessageFormat", resourceCulture);
             }
         }
         
@@ -286,15 +169,6 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ThrowsDeprecatedDescription.
-        /// </summary>
-        public static string String {
-            get {
-                return ResourceManager.GetString("String", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to You should implement a constructor that accepts a string and exception. desc.
         /// </summary>
         public static string StringAndExceptionConstructorMissingDescription {
@@ -345,42 +219,6 @@ namespace SerializableExceptionFixer {
         public static string StringConstructorMissingTitle {
             get {
                 return ResourceManager.GetString("StringConstructorMissingTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Abstract classes will not be run by NUnit, so this attribute can be removed.
-        /// </summary>
-        public static string TestFixtureOnAbstractClassIsUselessDescription {
-            get {
-                return ResourceManager.GetString("TestFixtureOnAbstractClassIsUselessDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TestFixture on abstract class is useless..
-        /// </summary>
-        public static string TestFixtureOnAbstractClassIsUselessMessageFormat {
-            get {
-                return ResourceManager.GetString("TestFixtureOnAbstractClassIsUselessMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Throws is deprecated, catch Exception yourself is recommended..
-        /// </summary>
-        public static string ThrowsDeprecatedDescription {
-            get {
-                return ResourceManager.GetString("ThrowsDeprecatedDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Throws is deprecated.
-        /// </summary>
-        public static string ThrowsDeprecatedMessageFormat {
-            get {
-                return ResourceManager.GetString("ThrowsDeprecatedMessageFormat", resourceCulture);
             }
         }
     }
