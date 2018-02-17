@@ -88,6 +88,33 @@ namespace SerializableExceptionFixer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Its recommended that each Exception ends with Exception.
+        /// </summary>
+        public static string ExceptionsSuffixDescription {
+            get {
+                return ResourceManager.GetString("ExceptionsSuffixDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Exceptions should end with Exception.
+        /// </summary>
+        public static string ExceptionsSuffixMessageFormat {
+            get {
+                return ResourceManager.GetString("ExceptionsSuffixMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Should be named *Exception.
+        /// </summary>
+        public static string ExceptionsSuffixMissingTitle {
+            get {
+                return ResourceManager.GetString("ExceptionsSuffixMissingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ExpectedExceptionAttribute is deprecated and will be removed in NUnit3. User Asser.ShouldThrow&lt;Exception&gt; instead..
         /// </summary>
         public static string ExpectedExceptionDeprecatedDescription {

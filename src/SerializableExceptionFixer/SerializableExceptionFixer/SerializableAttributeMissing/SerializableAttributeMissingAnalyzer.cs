@@ -58,7 +58,7 @@ namespace SerializableExceptionFixer.SerializableAttributeMissing
             DiagnosticIds.SerializableExceptionAttributeMissing,
             SerializableAttributeMissingTitle,
             SerializableAttributeMissingMessageFormat,
-            Constants.Category,
+            Constants.CategorySerialization,
             DiagnosticSeverity.Error,
             true,
             SerializableAttributeMissingDescription);

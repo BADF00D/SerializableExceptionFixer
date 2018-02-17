@@ -7,5 +7,6 @@
         public const string ConstructorThatAcceptsStringMissing = "SE1030";
         public const string ConstructorThatAcceptsStringAndExceptionMissing = "SE1040";
         public const string ConstructorThatAcceptsSerializationInfoAndStreamingContextMissing = "SE1050";
+        public const string ExceptionsShouldEndWithExceptions = "SE2050";
     }
 }

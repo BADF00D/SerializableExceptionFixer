@@ -219,4 +219,13 @@
   <data name="SerializationInfoAndStreamingContextConstructorMissingTitle" xml:space="preserve">
     <value>Constructor that accepts SerializationInfo and StreamingContext is missing.</value>
   </data>
+  <data name="ExceptionsSuffixDescription" xml:space="preserve">
+    <value>Its recommended that each Exception ends with Exception</value>
+  </data>
+  <data name="ExceptionsSuffixMessageFormat" xml:space="preserve">
+    <value>Custom Exceptions should end with Exception</value>
+  </data>
+  <data name="ExceptionsSuffixMissingTitle" xml:space="preserve">
+    <value>Should be named *Exception</value>
+  </data>
 </root>

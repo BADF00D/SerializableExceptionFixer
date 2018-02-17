@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ContructorsMissing\ContructorsMissingAnalyzerSpecs\ContructorsMissingAnalyzerSpec.cs" />
     <Compile Include="Dummy.cs" />
+    <Compile Include="ExceptionsSuffix\ExceptionsSuffixAnalyzer\ExceptionsSuffixAnalyzerSpec.cs" />
     <Compile Include="MyHelper.cs" />
     <Compile Include="SerializableAttributeMissing\SerializableAttributeMissingAnalyzerSpecs\SerializableAttributeMissingAnalyzerSpec.cs" />
     <Compile Include="Spec.cs" />
