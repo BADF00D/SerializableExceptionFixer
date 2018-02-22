@@ -39,6 +39,8 @@ public class MyException : Exception
 
 If thy custom exception has additional properties, these have to be public with getter and setter. Furthermore they have to be serialized by hand, implementing the ISerializable interface.
 
+If you are interessted in the diagnostics currently availbale, see [Diagnostics](Diagnostics.md).
+
 TODO add description and excample for exception with custom properties.
 
 
