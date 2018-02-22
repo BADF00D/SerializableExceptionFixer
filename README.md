@@ -55,6 +55,15 @@ If you are interessted in the diagnostics currently availbale, see [Diagnostics]
 
 ## TODO 
 * add description and examples for exception with custom properties.
+* add some analyzers
+    * analyze that properties and/or fields are used in constructor
+    * analyze that GetObjectData() is overwritten when using fields and/or properties
+    * analyze that fields and/or properties get serialized in GetObjectData() method.
+
+* write codefix that makes a exception serializable
+    * add [Serializable] Attribute
+    * implement constructors and assign properties and fields
+    * overwrite GetObjectData() and serialize properties and fields
 
 
 References:
