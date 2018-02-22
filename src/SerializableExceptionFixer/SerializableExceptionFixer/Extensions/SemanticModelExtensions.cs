@@ -7,7 +7,7 @@ namespace SerializableExceptionFixer.Extensions
     {
         public static bool IsException(this SemanticModel model, ClassDeclarationSyntax @class)
         {
-            if (!@class.BaseList.Types.Any()) return false;
+            if (!@class.BaseList?.Types.Any() ?? false) return false;
 
 
             if (model.GetDeclaredSymbol(@class) is INamedTypeSymbol nts) return nts.IsOfType("System.Exception");
