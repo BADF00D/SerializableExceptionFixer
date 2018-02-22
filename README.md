@@ -40,6 +40,32 @@ public class MyException : Exception
 
 If thy custom exception has additional properties, these have to be public with getter and setter. Furthermore they have to be serialized by hand, implementing the ISerializable interface.
 
+## Usage
+The analyzer can be user in two ways:
+* via Visual Studio Extension
+* via NuGet
+
+### Visual Studio Extension
+You can download the extension from Visual Studio Gallery.
+
+**Advantages**
+1. Analyzers and CodeFixes are availbale in all your projects you open.
+
+**Disadvantages**
+1. Only open files get analyzed
+2. It only works on each machine, where this extension is installed. If your collegue makes misstakes while implementing an exception, this extension won't help until you open the class.
+3. The analyzers mark all results as errors, ut Visual Studio don't treat them as compile time errors. 
+
+### NuGet
+**Advantages**
+1. Analzers are part of the project and therefore each develloper has to follow the proposed rules.
+2. All files get analyzers during build of the projects.
+2. Errors are compile time errors.
+
+**Disadvantages**
+1. Analyzers are only available in projects, that references them.
+2. Each project has to reference this NuGet-package on its own. 
+
 ## Available Diagnostics
 
 Id | Category | Short Description | Codefix availbale
@@ -60,7 +86,7 @@ If you are interessted in the diagnostics currently availbale, see [Diagnostics]
     * analyze that GetObjectData() is overwritten when using fields and/or properties
     * analyze that fields and/or properties get serialized in GetObjectData() method.
 
-* write codefix that makes a exception serializable
+* write CodeFix that makes an exception serializable
     * add [Serializable] Attribute
     * implement constructors and assign properties and fields
     * overwrite GetObjectData() and serialize properties and fields
