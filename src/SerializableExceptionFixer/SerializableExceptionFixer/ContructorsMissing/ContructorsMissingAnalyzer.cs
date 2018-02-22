@@ -70,7 +70,7 @@ namespace SerializableExceptionFixer.ContructorsMissing
             DiagnosticIds.ParameterlessConstructorMissing,
             ParameterlessConstructorMissingTitle,
             ParameterlessConstructorMissingMessageFormat,
-            Constants.CategorySerialization,
+            Constants.CategoryConvenience,
             DiagnosticSeverity.Error,
             true,
             ParameterlessConstructorMissingDescription);
@@ -93,7 +93,7 @@ namespace SerializableExceptionFixer.ContructorsMissing
             DiagnosticIds.ConstructorThatAcceptsStringMissing,
             StringConstructorMissingTitle,
             StringConstructorMissingMessageFormat,
-            Constants.CategorySerialization,
+            Constants.CategoryConvenience,
             DiagnosticSeverity.Error,
             true,
             StringConstructorMissingDescription);
@@ -118,7 +118,7 @@ namespace SerializableExceptionFixer.ContructorsMissing
                 DiagnosticIds.ConstructorThatAcceptsStringAndExceptionMissing,
                 StringAndExceptionConstructorMissingTitle,
                 StringAndExceptionConstructorMissingMessageFormat,
-                Constants.CategorySerialization,
+                Constants.CategoryConvenience,
                 DiagnosticSeverity.Error,
                 true,
                 StringAndExceptionConstructorMissingDescription);

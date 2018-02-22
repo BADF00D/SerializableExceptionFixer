@@ -4,5 +4,6 @@
     {
         public const string CategorySerialization = "Serialization";
         public const string CategoryNaming = "Naming";
+        public const string CategoryConvenience = "Convenience";
     }
 }
