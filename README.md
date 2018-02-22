@@ -11,7 +11,8 @@ Furthermore there are some recommendations for exceptions:
 * Exceptions should have the Suffix Exception
 * There should be a default constructor
 * There should be a constructor that accepts a string
-* There should be a constructor that accpets a string and an Exception                                                  
+* There should be a constructor that accpets a string and an Exception       
+* There should be a serialization constructor                                           
 
 ```csharp
 [Serializable]
@@ -39,9 +40,21 @@ public class MyException : Exception
 
 If thy custom exception has additional properties, these have to be public with getter and setter. Furthermore they have to be serialized by hand, implementing the ISerializable interface.
 
+## Available Diagnostics
+
+Id | Category | Short Description | Codefix availbale
+---|----------|-------------------|------------------
+SE1010| Serialization | [Serilizable] Attribute is missing | in future
+SE1020| Serialization | Serialization constructor is missing | in future
+SE2010| Convenience | Parameterless constructor is missing | in future
+SE2020| Convenience | Constructor that accepts string is missing | in future
+SE2030| Convenience | Constructor that accepts string and Exception is missing | in future| Serialization
+SE3010| Naming | Exceptions should have suffix Exception | in future
+
 If you are interessted in the diagnostics currently availbale, see [Diagnostics](Diagnostics.md).
 
-TODO add description and excample for exception with custom properties.
+## TODO 
+* add description and examples for exception with custom properties.
 
 
 References:
